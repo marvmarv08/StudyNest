@@ -79,7 +79,7 @@ export function GoogleClassroomConnect() {
   if (!import.meta.env.VITE_GOOGLE_CLIENT_ID) return <div className="page"><section className="panel"><h1>Connect Google Classroom</h1><p>Google Classroom is not configured for this app yet.</p></section></div>
 
   return <div className="page">
-    <header className="page-header" data-tour="classroom-header"><div><p className="eyebrow">Classroom sync</p><h1>Connect your Google Classroom</h1><p>Copy your active classes into Reviewer Organizer as persistent subjects.</p></div>
+    <header className="page-header" data-tour="classroom-header"><div><p className="eyebrow">Classroom sync</p><h1>Connect your Google Classroom</h1><p>Copy your active classes into StudyNest as persistent subjects.</p></div>
       {google.connected ? <button className="button ghost" onClick={google.disconnect}><LogOut /> Disconnect</button> : <button className="button primary" data-tour="classroom-connect-button" onClick={() => google.login()}><CloudDownload /> Connect Google Classroom</button>}
     </header>
     <section className="panel classroom-connect-panel" data-tour="classroom-connect">
@@ -91,7 +91,7 @@ export function GoogleClassroomConnect() {
         const imported = importedIds.has(course.id)
         return <label key={course.id} className={selected.has(course.id) ? 'selected' : ''}><input type="checkbox" checked={selected.has(course.id)} disabled={busy} onChange={() => toggle(course.id)} /><span><strong>{course.name}</strong><small>{classroomInstructorDescription(course.instructorNames)}{course.section ? ` · ${course.section}` : ''}</small></span>{imported && <em><Check /> Saved</em>}</label>
       })}</div><button className="button primary" disabled={busy || !selected.size} onClick={() => void importSelected()}><CloudDownload /> Save {selected.size || ''} selected class{selected.size === 1 ? '' : 'es'} as subjects</button></>}
-      <small className="classroom-privacy">Read-only Google access is temporary. Only the copied class details are saved in your private Reviewer Organizer account.</small>
+      <small className="classroom-privacy">Read-only Google access is temporary. Only the copied class details are saved in your private StudyNest account.</small>
     </section>
   </div>
 }

@@ -1,4 +1,4 @@
-# Reviewer Organizer
+# StudyNest
 
 ## Browser configuration
 
@@ -10,7 +10,9 @@ An offline-first study organizer for subjects, PDF reviewers, notes, identificat
 
 ## Live application
 
-Open Reviewer Organizer at <https://marvmarv08.github.io/reviewer-organizer/>.
+Open StudyNest at <https://marvmarv08.github.io/StudyNest/>.
+
+Existing links under `/reviewer-organizer/` forward to the new address. Production email verification and password-reset links retain that established callback path; a same-origin compatibility page forwards their query and fragment to StudyNest. Existing database, backup, and import identifiers are preserved.
 
 On a phone, open the link in a browser and choose **Add to Home Screen** or **Install app**. Study data is stored separately on each device; use the built-in backup and restore tools to transfer it.
 

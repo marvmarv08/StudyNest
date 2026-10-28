@@ -26,7 +26,7 @@ export const TOUR_PAGES: TourPage[] = [
     path: '/',
     label: 'Dashboard',
     steps: [
-      { title: 'Welcome to Reviewer Organizer!', description: 'Let’s walk through the complete study workflow. You can exit anytime and restart from App Guide.' },
+      { title: 'Welcome to StudyNest!', description: 'Let’s walk through the complete study workflow. You can exit anytime and restart from App Guide.' },
       { element: '[data-tour="dashboard-header"]', title: 'Your study command center', description: 'The dashboard is where you begin and return whenever you want an overview of your subjects.', side: 'bottom' },
       { element: '[data-tour="dashboard-subjects"]', title: 'Your subject library', description: 'Each subject keeps its PDFs, notes, questions, study progress, and test scores together.', side: 'top' },
     ],

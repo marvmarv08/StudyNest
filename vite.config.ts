@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   // GitHub Pages hosts the site below the repository name, not at the domain root.
-  base: '/reviewer-organizer/',
+  base: '/StudyNest/',
   plugins: [
     react(),
     VitePWA({
@@ -13,15 +13,15 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'reviewer-logo.jpg'],
       manifest: {
-        name: 'Reviewer Organizer',
-        short_name: 'Reviewer',
+        name: 'StudyNest',
+        short_name: 'StudyNest',
         description: 'Organize subjects, reviewers, notes, and mastery-based practice tests.',
         theme_color: '#10233f',
         background_color: '#f7f4ec',
         display: 'standalone',
-        start_url: '/reviewer-organizer/',
-        scope: '/reviewer-organizer/',
-        icons: [{ src: '/reviewer-organizer/reviewer-logo.jpg', sizes: '2048x2048', type: 'image/jpeg', purpose: 'any maskable' }],
+        start_url: '/StudyNest/',
+        scope: '/StudyNest/',
+        icons: [{ src: '/StudyNest/reviewer-logo.jpg', sizes: '2048x2048', type: 'image/jpeg', purpose: 'any maskable' }],
       },
       // Workbox caches the compiled app shell so it can launch while offline.
       workbox: { globPatterns: ['**/*.{js,css,html,svg}'] },

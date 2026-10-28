@@ -15,7 +15,7 @@ Skip when: Never skip during project work.
 
 ## Project Identity
 
-- Name: Reviewer Organizer
+- Name: StudyNest
 - One-sentence positioning: An offline-first study organizer for subjects, PDF reviewers, notes, mastery-based questions, and practice history.
 - Project type: Installable Progressive Web App built with React and TypeScript.
 - Current phase: Version 1 foundation and verification.
@@ -59,7 +59,7 @@ Reuse content already present in the current context; do not reopen an unchanged
 
 - Keep project state in project docs, not in agent-global memory.
 - Respond to Marvin in natural Taglish by default. Keep programming and product terms in clear English, then explain them in Tagalog when that improves understanding. Use another language only when Marvin requests it.
-- Treat development as guided learning for Marvin. Before and during meaningful changes, explain in beginner-friendly Taglish what the system component does, why it is needed, and how it connects to the rest of Reviewer Organizer.
+- Treat development as guided learning for Marvin. Before and during meaningful changes, explain in beginner-friendly Taglish what the system component does, why it is needed, and how it connects to the rest of StudyNest.
 - Define unfamiliar software terms when they first appear and use a short example when helpful. Do not assume prior knowledge of programming, Git, databases, testing, or deployment.
 - After each implemented feature, explain what changed, how Marvin can see or test it, the important tradeoffs or risks, and the main lesson to remember.
 - Keep explanations practical and proportional: emphasize decisions and concepts that help Marvin understand and eventually maintain the system, without burying him in noisy command logs or trivial syntax details.
@@ -88,7 +88,7 @@ Reuse content already present in the current context; do not reopen an unchanged
 - Do not store secrets in files, docs, logs, or chat.
 - This is Marvin's workspace. Before any GitHub read or write, verify that GitHub CLI is using `marvmarv08`; switch to that account if needed. Never publish Marvin's work through `morkmork26`.
 - Keep this repository's local Git author identity set to Marvin's GitHub username and GitHub-provided no-reply email.
-- Product boundary: Reviewer Organizer is becoming a multi-user Supabase application. Implement sign-up, sign-in, sign-out, email verification, password recovery, per-user cloud records, private PDF storage, and per-user offline caching. Never weaken Row Level Security or allow one user to access another user's data.
+- Product boundary: StudyNest is becoming a multi-user Supabase application. Implement sign-up, sign-in, sign-out, email verification, password recovery, per-user cloud records, private PDF storage, and per-user offline caching. Never weaken Row Level Security or allow one user to access another user's data.
 - Do not delete, migrate, overwrite, publish, charge, message, or change production data without confirmation.
 - Do not modify payment, user, order, permission, billing, credential, or external publication behavior without confirmation.
 - Do not use mock data as proof of real integration.

@@ -1,5 +1,5 @@
 # Build, verify, and publish the app whenever main changes or Marvin runs it manually.
-name: Deploy Reviewer Organizer to GitHub Pages
+name: Deploy StudyNest to GitHub Pages
 
 on:
   push:
